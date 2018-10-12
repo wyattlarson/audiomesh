@@ -1,1 +1,73 @@
+@font-face {
+  font-family: HKGrotesk-medium;
+  src: url("../font/HKGrotesk-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: HKGrotesk-regular;
+  src: url("../font/HKGrotesk-Regular.otf") format("opentype");
+}
+html {
+  width: 100vw;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "HKGrotesk-medium", sans-serif;
+  color: #212121;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
+  position: relative;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+p {
+  font-family: "HKGrotesk-regular", sans-serif;
+  font-size: 14pt;
+  line-height: 22pt;
+  col
+}
+nav {
+  display: flex;
+  padding: 10px 0;
+  width: 100%;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+#amLogo {
+  width: 100px;
+}
+#menuBtn {
+  width: 25px;
+  max-height: 100px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.menuLine {
+  height: 2px;
+  width: 100%;
+  background-color: #212121;
+  margin: 5px auto;
+}
+#menuLine-middle {
+  width: 67%;
+  margin: unset;
+}
+h1 {
+  font-size: 26pt;
+}
+#loginBtns{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
