@@ -15,7 +15,7 @@ html {
   margin: 0;
   font-size: 16px;
   font-family: "HKGrotesk-medium", sans-serif;
-  color: #212121;
+  color: #222;
 }
 body {
   display: flex;
@@ -23,20 +23,17 @@ body {
   scroll-behavior: smooth;
   overflow-y: scroll;
   overflow-x: hidden;
-
   position: relative;
-  padding: 0 10px;
   margin: 0 auto;
 }
 p {
   font-family: "HKGrotesk-regular", sans-serif;
-  font-size: 14pt;
+  font-size: 14px;
   line-height: 22pt;
-  col
 }
 nav {
   display: flex;
-  padding: 10px 0;
+  padding: 10px;
   width: 100%;
   margin: 10px auto;
   justify-content: space-between;
@@ -63,11 +60,117 @@ nav {
   width: 67%;
   margin: unset;
 }
-h1 {
-  font-size: 26pt;
+.feature {
+  padding: 15px;
 }
-#loginBtns{
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
+h1 {
+  font-size: 26px;
+}
+#loginBtns {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+.arrow {
+  background-image: url(../images/rightArrow.svg);
+  background-size: 100% 125%;
+  width: 50px;
+  display: inline-block;
+}
+span.arrow {
+  height: 17px;
+  width: 12px;
+}
+.signInBtnCont {
+  display: flex;
+}
+
+.fillerImage {
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  background-image: url("../images/fillerImage-01.svg");
+  background-size: cover;
+  border: 0.5px rgb(209, 209, 208);
+}
+.bodyTile {
+  text-align: center;
+  margin: 30px auto;
+  width: 90%;
+}
+.bodyTile p {
+  line-height: unset;
+}
+.appFeatureContainer {
+  width: 100%;
+  background-image: url("../images/yellow-grayBackground-01.svg");
+  background-size: cover;
+}
+.screenshotContainer {
+  width: 252px;
+  height: 432px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  margin: 60px auto;
+}
+.iosDownloadContainer {
+  background-color: #ffcb0f;
+  min-height: 250px;
+}
+.androidDownloadContainer {
+  min-height: 250px;
+  text-align: center;
+}
+.androidDownloadContainer p {
+  line-height: unset;
+}
+.iosDownloadContainer h3,
+.androidDownloadContainer h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 37px;
+}
+#appStoreLogo {
+  width: 205px;
+  margin: 30px auto 50px auto;
+  display: block;
+}
+#emailInput {
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  padding: 10px 0 10px 10px;
+}
+#notifyMeBtn {
+  background-color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+}
+.bold {
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  background-color: gainsboro;
+}
+footer #loginBtns {
+  max-width: 250px;
+}
+#footerNavUl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footerNavLi {
+  padding: 10px 0;
+}
+#appStoreLogo-footer {
+  width: 165px;
+  margin: 35px 0;
 }
