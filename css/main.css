@@ -39,6 +39,7 @@ nav {
   display: flex;
   padding: 10px;
   width: 100%;
+  min-height: 100px;
   margin: 10px auto;
   justify-content: space-between;
 }
@@ -46,13 +47,13 @@ nav {
   width: 100px;
 }
 #menuBtn {
-  width: 25px;
+  width: 32px;
   max-height: 100px;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   margin-right: 20px;
+  margin-top: 20px;
 }
 .menuLine {
   height: 2px;
@@ -62,7 +63,7 @@ nav {
 }
 #menuLine-middle {
   width: 67%;
-  margin: unset;
+  margin: 3px 3px 3px 0;
 }
 .feature {
   padding: 15px;
@@ -74,6 +75,8 @@ h1 {
   display: flex;
   width: 90%;
   justify-content: space-between;
+  max-width: 300px;
+  min-height: 55px;
 }
 .arrow {
   background-image: url(../images/rightArrow.svg);
@@ -94,7 +97,7 @@ span.arrow {
   width: 100%;
   margin: auto;
   background-image: url("../images/fillerImage-01.svg");
-  background-size: cover;
+  background-size: 100% 100%;
   border: 0.5px rgb(209, 209, 208);
 }
 .bodyTile {
@@ -167,15 +170,13 @@ span.arrow {
   font-weight: 900;
   font-size: 115%;
 }
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 10px;
   background-color: gainsboro;
-}
-footer #loginBtns {
-  max-width: 250px;
+  min-height: 500px;
 }
 #footerNavUl {
   list-style: none;
