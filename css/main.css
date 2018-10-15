@@ -6,6 +6,10 @@
   font-family: HKGrotesk-regular;
   src: url("../font/HKGrotesk-Regular.otf") format("opentype");
 }
+@font-face {
+  font-family: HKGrotesk-light;
+  src: url("../font/HKGrotesk-Light.otf") format("opentype");
+}
 html {
   width: 100vw;
 }
@@ -123,6 +127,8 @@ span.arrow {
   text-align: center;
 }
 .androidDownloadContainer p {
+  width: 75%;
+  margin: 20px auto;
   line-height: unset;
 }
 .iosDownloadContainer h3,
@@ -136,21 +142,30 @@ span.arrow {
   margin: 30px auto 50px auto;
   display: block;
 }
+.emailInput {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
 #emailInput {
   width: 60%;
   border-radius: 5px;
   border: 1px solid gainsboro;
-  padding: 10px 0 10px 10px;
+  padding: 18px 0 18px 18px;
 }
 #notifyMeBtn {
   background-color: black;
   border: none;
-  padding: 10px;
+  padding: 18px;
   border-radius: 3px;
   color: white;
+  font-family: "HKGrotesk-light", sans-serif;
+  font-size: 13px;
 }
 .bold {
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 115%;
 }
 footer {
   display: flex;
