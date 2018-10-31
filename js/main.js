@@ -32,3 +32,9 @@ function slideOutMenu() {
   //   } else {
   //   }
 }
+function showSignUp() {
+  document.querySelector("#signUpBody").classList.add("showSignup");
+}
+function closeSignUp() {
+  document.querySelector("#signUpBody").classList.remove("showSignup");
+}
