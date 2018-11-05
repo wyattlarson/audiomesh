@@ -38,3 +38,9 @@ function showSignUp() {
 function closeSignUp() {
   document.querySelector("#signUpBody").classList.remove("showSignup");
 }
+function showLogin() {
+  document.querySelector("#loginBody").classList.add("showSignup");
+}
+function closeLogin() {
+  document.querySelector("#loginBody").classList.remove("showSignup");
+}

@@ -56,10 +56,10 @@
 
         </div>
 
-        <div class="loginBody">
+        <div class="loginBody" id="loginBody">
             <div class="navbar">
                 <img class="long-logo" src="images/audiomesh-logo-long-black.svg" alt="audiomesh long logo">
-                <div class="signin-x" onclick="closeSignUp();"></div>
+                <div class="signin-x" onclick="closeLogin();"></div>
             </div>
             <img src="images/audiomesh-logoLarge.svg" alt="large audiomesh logo" class="logoFeature">
             <p>The app that lets you capture your ideas quickly,
@@ -75,7 +75,7 @@
                 </div>
                 <button id="signUpBtn">Log in</button>
             </div>
-            <a href="login" class="loginBtnLink">Create Account</a>
+            <span href="login" class="loginBtnLink">Create Account</span>
 
         </div>
 
@@ -97,7 +97,7 @@
                     <p class="pointer">Sign up</p>
                     <p class="arrow pointer"></p>
                 </div>
-                <div class="signInBtnCont" id="login">
+                <div class="signInBtnCont" id="login" onclick="showLogin()">
                     <p class="pointer">Log in</p>
                     <p class="arrow pointer"></p>
                 </div>
