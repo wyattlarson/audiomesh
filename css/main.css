@@ -28,9 +28,12 @@ body {
   overflow-x: hidden;
   position: relative;
   margin: 0 auto;
+  background-color: lightslategray;
 }
 .main {
   max-width: 600px;
+  box-shadow: 0 20px 20px;
+  background-color: white;
 }
 p {
   font-family: "HKGrotesk-regular", sans-serif;
@@ -68,7 +71,7 @@ nav {
   background-image: url("../images/x-image.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  position: fixed;
+  /* position: absolute; */
   right: 10px;
 }
 .signin-x {
@@ -208,7 +211,6 @@ span.arrow {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 10px;
   background-color: gainsboro;
   min-height: 500px;
 }
@@ -229,17 +231,18 @@ span.arrow {
   background-image: url("../images/upArrow.svg");
   background-repeat: no-repeat;
   background-position-x: right;
-  width: 125px;
+  width: 150px;
   cursor: pointer;
 }
 .slide-out-menu {
-  width: 100vw;
+  width: 100%;
   height: 0;
-  position: fixed;
+  position: absolute;
   overflow-y: hidden;
   background-color: #ffcb0f;
   opacity: 0.95;
   transition: 1.5s;
+  max-width: 600px;
 }
 .slide-out-nav {
   padding: unset;
@@ -254,6 +257,7 @@ span.arrow {
   border-bottom-left-radius: 25%;
   border-bottom-right-radius: 25%;
   display: block;
+  max-width: 600px;
 }
 .slide-out-li {
   padding: 10px;
@@ -289,6 +293,7 @@ span.arrow {
   height: 0;
   position: fixed;
   overflow: hidden;
+  max-width: 600px;
 }
 .heading {
   text-align: center;
@@ -386,6 +391,7 @@ span.arrow {
   overflow: hidden;
   position: fixed;
   overflow: hidden;
+  max-width: 600px;
 }
 .loginBody p {
   text-align: center;
@@ -429,19 +435,21 @@ span.arrow {
     align-items: center;
     justify-content: center;
   }
-  .main{   
-  align-self: flex-start;
-  max-width: 100%;
-  min-width: 100%;
+  .main {
+    align-self: flex-start;
+    width: 100%;
+    max-width: 600px;
   }
-  .feature, .footer{
+  .feature,
+  .footer {
     text-align: center;
   }
-  #appStoreLogo-footer, #loginBtns, #topBtn {
+  #appStoreLogo-footer,
+  #loginBtns,
+  #topBtn {
     align-self: center;
   }
-  .emailInput{
-    margin-left:25%;
+  .emailInput {
+    margin-left: 25%;
   }
-  
 }
