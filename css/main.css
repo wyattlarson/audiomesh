@@ -23,7 +23,6 @@ html {
 }
 body {
   display: flex;
-  flex-direction: column;
   scroll-behavior: smooth;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -186,7 +185,7 @@ span.arrow {
   flex-wrap: nowrap;
 }
 #emailInput {
-  width: 60%;
+  width: 50%;
   border-radius: 5px;
   border: 1px solid gainsboro;
   padding: 18px 0 18px 18px;
@@ -199,6 +198,7 @@ span.arrow {
   color: white;
   font-family: "HKGrotesk-light", sans-serif;
   font-size: 13px;
+  margin-left: 5px;
 }
 .bold {
   font-weight: 900;
@@ -422,4 +422,26 @@ span.arrow {
 }
 .loginBody .loginBtnLink {
   margin-top: 50px;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    align-items: center;
+    justify-content: center;
+  }
+  .main{   
+  align-self: flex-start;
+  max-width: 100%;
+  min-width: 100%;
+  }
+  .feature, .footer{
+    text-align: center;
+  }
+  #appStoreLogo-footer, #loginBtns, #topBtn {
+    align-self: center;
+  }
+  .emailInput{
+    margin-left:25%;
+  }
+  
 }
