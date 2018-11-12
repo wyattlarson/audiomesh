@@ -28,7 +28,6 @@ body {
   overflow-x: hidden;
   position: relative;
   margin: 0 auto;
-  background-color: lightslategray;
 }
 .main {
   max-width: 600px;
@@ -434,6 +433,8 @@ span.arrow {
   body {
     align-items: center;
     justify-content: center;
+    background-color: lightslategray;
+
   }
   .main {
     align-self: flex-start;
