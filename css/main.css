@@ -433,7 +433,7 @@ span.arrow {
   body {
     align-items: center;
     justify-content: center;
-    background-color: lightslategray;
+    background-color: rgb(185, 185, 185);
 
   }
   .main {
