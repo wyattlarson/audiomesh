@@ -7,7 +7,6 @@ html {
   width: 100%;
   margin: 0;
   padding: 0px;
-  /*overflow: hidden;*/
   font-size: 16px;
   font-family: "brandon-grotesque", sans-serif;
   font-weight: 420;
@@ -26,6 +25,7 @@ body {
   background-color: white;
   align-self: flex-start;
   width: 100%;
+  overflow: hidden;
 }
 p {
   font-family: "brandon-grotesque", sans-serif;
