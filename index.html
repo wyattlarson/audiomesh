@@ -1,179 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.typekit.net/yhn2ely.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>AudioMesh</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main class="main">
-        <div class="slide-out-menu" id="slide-out-menu">
-            <ul class="slide-out-nav">
-                <li class="slide-out-li"><a href="#" class="slide-out-a">My Account</a></li>
-                <li class="slide-out-li"><a href="#" class="slide-out-a">About</a></li>
-                <li class="slide-out-li"><a href="#" class="slide-out-a">Support</a></li>
-                <li class="slide-out-li"><a href="#" class="slide-out-a">FAQ</a></li>
+      <div class="slide-out-menu" id="slide-out-menu">
+        <ul class="slide-out-nav">
+          <li class="slide-out-li">
+            <a href="#" class="slide-out-a">My Account</a>
+          </li>
+          <li class="slide-out-li">
+            <a href="#" class="slide-out-a">About</a>
+          </li>
+          <li class="slide-out-li">
+            <a href="#" class="slide-out-a">Support</a>
+          </li>
+          <li class="slide-out-li"><a href="#" class="slide-out-a">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="signupBody" id="signUpBody">
+        <div class="navbar">
+          <img
+            class="long-logo"
+            src="images/audiomesh-logo-long-black.svg"
+            alt="audiomesh long logo"
+          />
+          <div class="signin-x" onclick="closeSignUp();"></div>
+        </div>
+
+        <div class="heading"><h2>Create Account</h2></div>
+
+        <div class="signupContainer">
+          <div class="photoHeader">
+            <img
+              src="images/profileS.jpg"
+              alt="profilePic"
+              class="profilePic"
+            />
+            <div class="photoOptions">
+              <p>CHANGE PHOTO</p>
+              <div class="photoMethods">
+                <a href="#">Camera</a> <a href="#">Gallery</a>
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <p class="formLabel">First Name</p>
+            <input class="formInput" type="text" />
+            <p class="formLabel">Last Name</p>
+            <input type="text" class="formInput" />
+            <p class="formLabel">Email</p>
+            <input type="email" class="formInput" />
+            <p class="formLabel">Password</p>
+            <input type="password" class="formInput" />
+            <button id="signUpBtn">Create Account</button>
+          </div>
+        </div>
+        <a href="#" class="loginBtnLink">Log In</a>
+      </div>
+
+      <div class="loginBody" id="loginBody">
+        <div class="navbar">
+          <img
+            class="long-logo"
+            src="images/audiomesh-logo-long-black.svg"
+            alt="audiomesh long logo"
+          />
+          <div class="signin-x" onclick="closeLogin();"></div>
+        </div>
+        <img
+          src="images/audiomesh-logoLarge.svg"
+          alt="large audiomesh logo"
+          class="logoFeature"
+        />
+        <p>
+          The app that lets you capture your ideas quickly, share them
+          privately, and store them securely in the cloud.
+        </p>
+        <div class="form">
+          <div class="form-container">
+            <p class="formLabel">Email</p>
+            <input type="email" class="formInput" />
+            <p class="formLabel">Password</p>
+            <input type="password" class="formInput" />
+          </div>
+          <button id="signUpBtn">Log in</button>
+        </div>
+        <span href="#" class="loginBtnLink">Create Account</span>
+      </div>
+
+      <nav class="max24">
+        <img
+          id="amLogo"
+          src="images/audiomesh-logoFull.svg"
+          alt="audiomesh logo"
+        />
+        <div id="menuBtn">
+          <div class="menuLine"></div>
+          <div class="menuLine" id="menuLine-middle"></div>
+          <div class="menuLine"></div>
+        </div>
+      </nav>
+      <div class="feature max24">
+        <h1>Capture your next big idea.</h1>
+        <p>An app for recording and privately sharing your musical ideas.</p>
+
+        <div id="loginBtns" class="max24">
+          <div class="signInBtnCont" id="signupBtn" onclick="showSignUp()">
+            <p class="pointer">Sign up</p>
+            <p class="arrow pointer"></p>
+          </div>
+          <div class="signInBtnCont" id="login" onclick="showLogin()">
+            <p class="pointer">Log in</p>
+            <p class="arrow pointer"></p>
+          </div>
+          <div class="filler">.</div>
+        </div>
+      </div>
+      <div class="bodyTileContainer max24">
+        <div class="bodyTile">
+          <div class="fillerImage"></div>
+          <h3>Record Your Ideas</h3>
+          <p>
+            Don’t let your next great riff or melody slip away. Record them with
+            Audiomesh.
+          </p>
+        </div>
+        <div class="bodyTile">
+          <div class="fillerImage"></div>
+          <h3>Keep your ideas safe in the cloud</h3>
+          <p>
+            Broken or lost phone? Keep your ideas safe in the cloud and synced
+            across devices..
+          </p>
+        </div>
+        <div class="bodyTile">
+          <div class="fillerImage"></div>
+          <h3>Share your ideas privately</h3>
+          <p>
+            Share your ideas with only the people you trust. It’s super easy.
+          </p>
+        </div>
+      </div>
+      <div class="appFeatureContainer">
+        <div class="screenshotContainer"></div>
+        <div class="bodyTile">
+          <h3>No BS, just a simple app</h3>
+          <p>
+            No unecessary features like social feeds, followers, or profiles.
+            Just a simple, private collaboration app that let’s you communicate
+            and share ideas with your band, producer, or manager.
+          </p>
+        </div>
+      </div>
+      <div class="iosDownloadContainer">
+        <h3>Download for iOS</h3>
+        <img
+          id="appStoreLogo"
+          src="images/appStore.svg"
+          alt="app-storeLogo"
+          display="block"
+        />
+      </div>
+      <div class="androidDownloadContainer">
+        <h3>Coming soon to Android</h3>
+        <div class="emailInput">
+          <input id="emailInput" type="email" placeholder="Email Address" />
+          <button id="notifyMeBtn" type="button">Notify Me</button>
+        </div>
+        <p>
+          We will only send you <span class="bold"> one</span> email when it’s
+          released. Promise.
+        </p>
+      </div>
+      <div class="footer">
+        <div class="footer-main">
+          <div id="loginBtns" class="loginBtn-footer">
+            <div
+              class="signInBtnCont"
+              onclick="showSignUp()"
+              id="signupBtnBottom"
+            >
+              <p class="pointer">Sign up</p>
+              <p class="arrow pointer"></p>
+            </div>
+            <div
+              class="signInBtnCont"
+              id="loginBtnBottom"
+              onclick="showLogin()"
+            >
+              <p class="pointer">Log in</p>
+              <p class="arrow pointer"></p>
+            </div>
+            <div class="filler"></div>
+          </div>
+          <div class="footerNav">
+            <ul id="footerNavUl">
+              <li class="footerNavLi">Support</li>
+              <li class="footerNavLi">About</li>
+              <li class="footerNavLi">FAQ</li>
+              <li class="footerNavLi">Privacy Policy</li>
+              <li class="footerNavLi">Terms of Use</li>
             </ul>
+          </div>
+          <img
+            id="appStoreLogo-footer"
+            src="images/appStore.svg"
+            alt="app-storeLogo"
+            display="block"
+          />
+          <p id="topBtn">BACK TO TOP</p>
+          <p class="copyText">&copy;Copyright 2018 Audiomesh</p>
         </div>
-        <div class="signupBody" id="signUpBody">
-            <div class="navbar">
-                <img class="long-logo" src="images/audiomesh-logo-long-black.svg" alt="audiomesh long logo">
-                <div class="signin-x" onclick="closeSignUp();"></div>
-            </div>
-
-            <div class="heading">
-                <h2>Create Account</h2>
-            </div>
-
-            <div class="signupContainer">
-                <div class="photoHeader">
-                    <img src="images/profileS.jpg" alt="profilePic" class="profilePic">
-                    <div class="photoOptions">
-                        <p>CHANGE PHOTO</p>
-                        <div class="photoMethods">
-                            <a href="#">Camera</a>
-                            <a href="#">Gallery</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="form">
-                    <p class="formLabel">First Name</p>
-                    <input class="formInput" type="text">
-                    <p class="formLabel">Last Name</p>
-                    <input type="text" class="formInput">
-                    <p class="formLabel">Email</p>
-                    <input type="email" class="formInput">
-                    <p class="formLabel">Password</p>
-                    <input type="password" class="formInput">
-                    <button id="signUpBtn">Create Account</button>
-                </div>
-            </div>
-            <a href="#" class="loginBtnLink">Log In</a>
-
-        </div>
-
-        <div class="loginBody" id="loginBody">
-            <div class="navbar">
-                <img class="long-logo" src="images/audiomesh-logo-long-black.svg" alt="audiomesh long logo">
-                <div class="signin-x" onclick="closeLogin();"></div>
-            </div>
-            <img src="images/audiomesh-logoLarge.svg" alt="large audiomesh logo" class="logoFeature">
-            <p>The app that lets you capture your ideas quickly,
-                share them privately, and store them securely
-                in the cloud.
-            </p>
-            <div class="form">
-                <div class="form-container">
-                    <p class="formLabel">Email</p>
-                    <input type="email" class="formInput">
-                    <p class="formLabel">Password</p>
-                    <input type="password" class="formInput">
-                </div>
-                <button id="signUpBtn">Log in</button>
-            </div>
-            <span href="#" class="loginBtnLink">Create Account</span>
-
-        </div>
-
-        <nav>
-            <img id="amLogo" src="images/audiomesh-logoFull.svg" alt="audiomesh logo">
-            <div id="menuBtn">
-                <div class="menuLine"></div>
-                <div class="menuLine" id="menuLine-middle"></div>
-                <div class="menuLine"></div>
-            </div>
-        </nav>
-        <div class="feature">
-            <h1>Capture your next big idea.</h1>
-            <p>An app for recording and privately sharing your musical ideas.</p>
-
-
-            <div id="loginBtns">
-                <div class="signInBtnCont" id="signupBtn" onclick="showSignUp()">
-                    <p class="pointer">Sign up</p>
-                    <p class="arrow pointer"></p>
-                </div>
-                <div class="signInBtnCont" id="login" onclick="showLogin()">
-                    <p class="pointer">Log in</p>
-                    <p class="arrow pointer"></p>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="bodyTileContainer">
-            <div class="bodyTile">
-                <div class="fillerImage"></div>
-                <h3>Record Your Ideas</h3>
-                <p> Don’t let your next great riff or melody slip away. Record them with Audiomesh.</p>
-            </div>
-            <div class="bodyTile">
-                <div class="fillerImage"></div>
-                <h3>Keep your ideas safe in the cloud</h3>
-                <p> Broken or lost phone? Keep your ideas safe in the cloud and synced across devices..</p>
-            </div>
-            <div class="bodyTile">
-                <div class="fillerImage"></div>
-                <h3>Share your ideas privately</h3>
-                <p>Share your ideas with only the people you trust. It’s super easy.</p>
-            </div>
-        </div>
-        <div class="appFeatureContainer">
-            <div class="screenshotContainer"></div>
-            <div class="bodyTile">
-                <h3>No BS, just a simple app</h3>
-                <p> No unecessary features like social feeds, followers, or profiles. Just a simple, private
-                    collaboration
-                    app that let’s you communicate and share ideas with your band, producer, or manager.</p>
-            </div>
-        </div>
-        <div class="iosDownloadContainer">
-            <h3>Download for iOS</h3>
-            <img id="appStoreLogo" src="images/appStore.svg" alt="app-storeLogo" display="block">
-
-        </div>
-        <div class="androidDownloadContainer">
-            <h3>Coming soon to Android</h3>
-            <div class="emailInput">
-                <input id="emailInput" type="email" placeholder="Email Address">
-                <button id="notifyMeBtn" type="button">Notify Me</button>
-            </div>
-            <p>We will only send you <span class="bold"> one</span> email when it’s released. Promise.</p>
-
-        </div>
-        <div class="footer">
-            <div id="loginBtns">
-                <div class="signInBtnCont" onclick="showSignUp()" id="signupBtnBottom">
-                    <p class="pointer">Sign up</p>
-                    <p class="arrow pointer"></p>
-                </div>
-                <div class="signInBtnCont" id="loginBtnBottom" onclick="showLogin()">
-                    <p class="pointer">Log in</p>
-                    <p class="arrow pointer"></p>
-                </div>
-            </div>
-            <div class="footerNav">
-                <ul id="footerNavUl">
-                    <li class="footerNavLi">Support</li>
-                    <li class="footerNavLi">About</li>
-                    <li class="footerNavLi">FAQ</li>
-                    <li class="footerNavLi">Privacy Policy</li>
-                    <li class="footerNavLi">Terms of Use</li>
-                </ul>
-            </div>
-            <img id="appStoreLogo-footer" src="images/appStore.svg" alt="app-storeLogo" display="block">
-            <p id="topBtn">BACK TO TOP</p>
-            <p class="copyText">&copy;Copyright 2018 Audiomesh</p>
-
-        </div>
-        <script src="js/main.js"></script>
+      </div>
+      <script src="js/main.js"></script>
     </main>
-
-</body>
-
+  </body>
 </html>
