@@ -26,7 +26,7 @@ body {
   background-color: white;
   align-self: flex-start;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 p {
   font-family: 'brandon-grotesque', sans-serif;
